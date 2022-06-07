@@ -25,10 +25,10 @@ public class ComunicacaoEntity implements Serializable {
     @Column(name = "HORA_ENVIO", nullable = false)
     private Date dataHoraenvio;
 
-    @Column(name = "NOME_DESTINATARIO", nullable = false, unique = true)
+    @Column(name = "NOME_DESTINATARIO", nullable = false)
     private String nomeDestinatario;
 
-    @Column(name = "EMAIL_DESTINATARIO")
+    @Column(name = "EMAIL_DESTINATARIO", nullable = false, unique = true)
     private String emailDestinatario;
 
     @Column(name = "TELEFONE_DESTINATARIO")
